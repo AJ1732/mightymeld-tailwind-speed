@@ -19,14 +19,14 @@ export const possibleTileContents = [
 export function StartScreen({ start }) {
   return (
     <div className="w-full">
-      <div className="flex flex-col justify-center items-center h-80 w-80 pb-6 bg-pink-50 rounded-md mt-16 m-auto gap-6 ">
+      <div className="flex flex-col justify-center items-center h-80 w-80 pb-6 bg-pink-50 rounded-lg mt-16 m-auto gap-6 ">
         <h1 className="text-3xl text-pink-500 font-bold">Memory</h1>
         <p className="text-sm text-pink-500 font-semibold">
           Flip over tiles looking for pairs
         </p>
         <button
           onClick={start}
-          className="flex justify-center items-center bg-gradient-to-b from-pink-400 to-pink-600 text-white py-1 px-10 mt-4 rounded-full font-medium text-xl drop-shadow-lg"
+          className="bg-gradient-to-b from-pink-400 to-pink-600 text-white py-1 px-10 mt-4 rounded-full font-medium text-xl drop-shadow-lg"
         >
           Play
         </button>
