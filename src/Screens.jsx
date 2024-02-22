@@ -21,7 +21,7 @@ export function StartScreen({ start }) {
     <div className="w-full">
       <div className="flex flex-col justify-center items-center h-80 w-80 pb-6 bg-pink-50 rounded-lg mt-16 m-auto gap-6 ">
         <h1 className="text-3xl text-pink-500 font-bold">Memory</h1>
-        <p className="text-sm text-pink-500 font-semibold">
+        <p className="text-pink-500 font-semibold">
           Flip over tiles looking for pairs
         </p>
         <button
@@ -119,12 +119,12 @@ export function PlayScreen({ end }) {
   return (
     <>
       <div className="p-10 flex flex-col gap-12">
-        <div className="flex justify-center items-center gap-2">
-          <p className="text-indigo-500 text-lg font-medium tracking-tight">
+        <div className="flex justify-center items-center gap-2 text-lg">
+          <p className="text-indigo-500 font-semibold tracking-tight">
             Tries
           </p>
 
-          <p className="px-1 rounded text-lg text-indigo-600 bg-indigo-200 font-semibold">
+          <p className="px-2 rounded text-indigo-600 bg-indigo-200 font-semibold">
             {tryCount}
           </p>
         </div>
