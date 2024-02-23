@@ -20,12 +20,10 @@ export function StartScreen({ start }) {
   return (
     <div className="flex flex-col justify-center items-center h-80 w-80 pb-6 bg-pink-50 text-pink-500 rounded-lg mt-16 m-auto gap-6 ">
       <h1 className="text-3xl font-bold">Memory</h1>
-      <p className="font-medium">
-        Flip over tiles looking for pairs
-      </p>
+      <p className="font-medium">Flip over tiles looking for pairs</p>
       <button
         onClick={start}
-        className="bg-gradient-to-b from-pink-400 to-pink-600 text-white py-1 px-10 mt-4 rounded-full font-medium text-xl drop-shadow-2xl focus:from-pink-500 focus:to-pink-600 focus:scale-[0.99] focus:drop-shadow-none"
+        className="bg-gradient-to-b from-pink-400 to-pink-600 text-white py-1.5 px-11 mt-4 rounded-full font-medium text-xl drop-shadow-2xl focus:from-pink-500 focus:to-pink-600 focus:scale-[0.99]  focus:drop-shadow-none"
       >
         Play
       </button>
@@ -118,16 +116,14 @@ export function PlayScreen({ end }) {
     <>
       <div className="p-10 flex flex-col gap-12">
         <div className="flex justify-center items-center gap-2 text-lg font-medium">
-          <p className="text-indigo-500">
-            Tries
-          </p>
+          <p className="text-indigo-500">Tries</p>
 
           <p className="px-2 rounded text-indigo-600 bg-indigo-200">
             {tryCount}
           </p>
         </div>
 
-        <div className="w-fit grid grid-cols-4 grid-rows-4 gap-3 p-3 bg-indigo-50 m-auto rounded-lg">
+        <div className="w-80 h-80 grid grid-cols-4 grid-rows-4 gap-3 p-3 bg-indigo-50 m-auto rounded-lg">
           {getTiles(16).map((tile, i) => (
             <Tile key={i} flip={() => flip(i)} {...tile} />
           ))}
